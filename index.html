@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marigold Cup · Neighbourhood Café</title>
+  <meta name="description" content="Marigold Cup is a cosy (made-up) neighbourhood café at 42 Lantern Lane, Brookfield. Good coffee, warm bakes, friendly faces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Marigold Cup home">
+        <span class="brand-mark" aria-hidden="true">✿</span> Marigold Cup
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <span class="bar" aria-hidden="true"></span><span class="bar" aria-hidden="true"></span><span class="bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#find-us">Find Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Welcome -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Your neighbourhood café</p>
+          <h1>Marigold Cup</h1>
+          <p class="lead">Good coffee, warm bakes and a sunny seat waiting just for you.</p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-order" id="open-order" aria-haspopup="dialog">
+              <span aria-hidden="true">☕</span> Order ahead
+            </button>
+            <a href="#menu" class="btn btn-ghost">See our menu</a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img src="images/hero.jpg" width="1280" height="720"
+               alt="A creamy latte with leaf latte art in a cream cup on a wooden saucer, surrounded by orange marigold flowers in warm sunlight">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-intro">Made fresh every day, with love (and plenty of cinnamon).</p>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <h3><span aria-hidden="true">☕</span> Coffee</h3>
+            <ul class="menu-list">
+              <li><div class="item-row"><span class="item-name">Espresso</span><span class="item-price">$3.00</span></div><p class="item-desc">A short, rich shot of our house roast.</p></li>
+              <li><div class="item-row"><span class="item-name">Cappuccino</span><span class="item-price">$4.50</span></div><p class="item-desc">Espresso with silky steamed milk and a cloud of foam.</p></li>
+              <li><div class="item-row"><span class="item-name">Marigold Latte</span><span class="item-price">$5.25</span></div><p class="item-desc">Our signature: honey, a pinch of cinnamon and orange zest.</p></li>
+              <li class="seasonal"><div class="item-row"><span class="item-name">Honey Marigold Latte <span class="tag">Seasonal</span></span><span class="item-price">$5.25</span></div><p class="item-desc">Our autumn special: wildflower honey, warm vanilla and a dusting of nutmeg.</p></li>
+              <li><div class="item-row"><span class="item-name">Cold Brew</span><span class="item-price">$4.75</span></div><p class="item-desc">Steeped for 18 hours, smooth and chocolatey over ice.</p></li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <h3><span aria-hidden="true">🍵</span> Tea &amp; Other Drinks</h3>
+            <ul class="menu-list">
+              <li><div class="item-row"><span class="item-name">Spiced Chai Latte</span><span class="item-price">$4.75</span></div><p class="item-desc">Warming spices, black tea and steamed milk.</p></li>
+              <li><div class="item-row"><span class="item-name">Earl Grey Pot</span><span class="item-price">$3.50</span></div><p class="item-desc">A little pot of fragrant bergamot tea for one.</p></li>
+              <li><div class="item-row"><span class="item-name">Hot Chocolate</span><span class="item-price">$4.25</span></div><p class="item-desc">Thick, creamy and topped with whipped cream.</p></li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <h3><span aria-hidden="true">🥐</span> Bakes</h3>
+            <ul class="menu-list">
+              <li><div class="item-row"><span class="item-name">Butter Croissant</span><span class="item-price">$3.75</span></div><p class="item-desc">Flaky, golden and baked every morning.</p></li>
+              <li><div class="item-row"><span class="item-name">Cinnamon Roll</span><span class="item-price">$4.25</span></div><p class="item-desc">Soft, swirly and glazed while still warm.</p></li>
+              <li><div class="item-row"><span class="item-name">Blueberry Muffin</span><span class="item-price">$3.50</span></div><p class="item-desc">Bursting with berries and a crunchy sugar top.</p></li>
+              <li><div class="item-row"><span class="item-name">Banana Bread Slice</span><span class="item-price">$3.95</span></div><p class="item-desc">Grandma’s recipe, best with a little butter.</p></li>
+            </ul>
+          </article>
+        </div>
+
+        <figure class="menu-photo">
+          <img src="images/bakes.jpg" width="1152" height="864" loading="lazy"
+               alt="Golden croissants, cinnamon rolls and a blueberry muffin on a rustic wooden board beside a cup of coffee and marigold flowers">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section id="story" class="section story">
+      <div class="container story-grid">
+        <figure class="story-image">
+          <img src="images/interior.jpg" width="1152" height="864" loading="lazy"
+               alt="The inside of a small, empty café with marigold-yellow walls, a wooden counter, an espresso machine, hanging lights and lots of plants">
+        </figure>
+        <div class="story-text">
+          <h2 class="section-title">Our Story</h2>
+          <p>Marigold Cup began with one old espresso machine, a pot of marigolds on the windowsill and a simple wish: to give Lantern Lane a place where everyone feels at home. What started as a tiny corner counter serving coffee to sleepy neighbours has grown into a cosy little café full of chatter, fresh bakes and familiar faces. We still know most of our regulars by name (and by order!), and every cup is made the way we’d make it for a friend.</p>
+          <p class="signature">— From all of us at Marigold Cup</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Us -->
+    <section id="find-us" class="section find">
+      <div class="container find-grid">
+        <div class="find-card">
+          <h2 class="section-title">Find Us</h2>
+          <address>
+            <strong>Marigold Cup</strong><br>
+            42 Lantern Lane<br>
+            Brookfield
+          </address>
+          <p class="find-note">Look for the yellow door and the flower boxes. Dogs and strollers are always welcome.</p>
+        </div>
+        <div class="find-card">
+          <h3>Opening Hours</h3>
+          <table class="hours">
+            <caption class="sr-only">Opening hours for each day of the week</caption>
+            <tbody>
+              <tr><th scope="row">Monday</th><td>7:00 am – 6:00 pm</td></tr>
+              <tr><th scope="row">Tuesday</th><td>7:00 am – 6:00 pm</td></tr>
+              <tr><th scope="row">Wednesday</th><td>7:00 am – 6:00 pm</td></tr>
+              <tr><th scope="row">Thursday</th><td>7:00 am – 7:00 pm</td></tr>
+              <tr><th scope="row">Friday</th><td>7:00 am – 8:00 pm</td></tr>
+              <tr><th scope="row">Saturday</th><td>8:00 am – 8:00 pm</td></tr>
+              <tr><th scope="row">Sunday</th><td>9:00 am – 4:00 pm</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container narrow">
+        <h2 class="section-title">Say Hello</h2>
+        <p class="section-intro">Questions, ideas or just want to say hi? Drop us a note.</p>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <p class="form-error" id="form-error" role="alert" hidden>Please fill in your name, a valid email and a message.</p>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+        <div class="thank-you" id="thank-you" tabindex="-1" role="status" aria-live="polite" hidden>
+          <p class="thank-you-title">Thank you! ☕</p>
+          <p>Your note is on its way to our (imaginary) inbox. We’ll save you a warm seat.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-brand">Marigold Cup · 42 Lantern Lane, Brookfield</p>
+      <p class="demo-note">Demo site — Marigold Cup is a made-up café created for an AI Workthrough video.</p>
+    </div>
+  </footer>
+
+  <!-- Order ahead dialog (demo only — nothing is sent) -->
+  <dialog id="order-dialog" class="order-dialog" aria-labelledby="order-title">
+    <div class="order-inner">
+      <div class="order-head">
+        <h2 id="order-title">Order ahead</h2>
+        <button type="button" class="dialog-close" id="close-order" aria-label="Close order form">&times;</button>
+      </div>
+
+      <form id="order-form" class="order-form" novalidate>
+        <div class="order-body">
+        <p class="order-intro">Pick what you’d like and we’ll have it ready when you arrive.</p>
+        <div id="order-items" class="order-items"><!-- filled by script.js --></div>
+
+        <fieldset class="order-options">
+          <legend>Your drinks</legend>
+          <div class="option-grid">
+            <div class="field">
+              <label for="order-size">Drink size</label>
+              <select id="order-size" name="size">
+                <option value="regular">Regular</option>
+                <option value="large">Large (+$0.75 per drink)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="order-milk">Milk</label>
+              <select id="order-milk" name="milk">
+                <option>Whole milk</option>
+                <option>Oat milk</option>
+                <option>Almond milk</option>
+                <option>Skim milk</option>
+                <option>No milk</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="option-grid">
+          <div class="field">
+            <label for="order-time">Pickup time</label>
+            <select id="order-time" name="time"><!-- filled by script.js --></select>
+          </div>
+          <div class="field">
+            <label for="order-name">Name for the order</label>
+            <input id="order-name" name="name" type="text" autocomplete="name" required>
+          </div>
+        </div>
+
+        <p class="form-error" id="order-error" role="alert" hidden></p>
+        </div>
+
+        <div class="order-footer">
+          <p class="order-total" aria-live="polite">Total: <strong id="order-total">$0.00</strong></p>
+          <button type="submit" class="btn btn-order">Place order</button>
+          <p class="demo-hint">Demo only: no order is sent and nothing is charged.</p>
+        </div>
+      </form>
+
+      <div id="order-confirm" class="order-confirm order-body" tabindex="-1" hidden>
+        <p class="confirm-emoji" aria-hidden="true">🌼</p>
+        <h3 id="confirm-title">Thanks!</h3>
+        <p id="confirm-when"></p>
+        <ul id="confirm-list" class="confirm-list"></ul>
+        <p class="confirm-total">Total: <strong id="confirm-total"></strong></p>
+        <p class="demo-hint">This is a demo site: no order was sent and nothing was charged. Marigold Cup is a made-up café.</p>
+        <button type="button" class="btn btn-ghost" id="confirm-done">Done</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
